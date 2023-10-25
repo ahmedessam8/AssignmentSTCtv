@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="STCtv">
+
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+    </listeners>
+
+    <test name="STCtv" parallel="classes" thread-count="3">
+        <classes>
+            <class name="tests.TestCaseKSA"></class>
+            <class name="tests.TestCaseBahrin"></class>
+            <class name="tests.TestCaseKuwait"></class>
+
+        </classes>
+    </test>
+</suite> <!-- Suite -->
